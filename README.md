@@ -23,6 +23,8 @@
 
 A short tutorial to understand how to integrate cheat engine on pixel worlds.
 
+Why should you make your own cheat table? Nowaday everything related to pixel worlds has a steler, so you may get virus or your account will be stolen.
+
 You will understanding what to change, it's a basic understanding of how to use cheat engine on unity game, you will learn how to change integer, how to skip a function call,...
 
 ## Prerequisites
