@@ -45,7 +45,7 @@ Download the lastest version of cheat engine: https://www.cheatengine.org
 
 ![image](https://user-images.githubusercontent.com/91699796/195326496-2efdba52-276f-4d30-b70e-92200c20563d.png)
 
-2. For this first tutorial will be try to unlock all recipes (for steam version), inside the Mono Dissector -> Assembly-CSharp.dll -> look for the class PlayerData -> Methods -> HasUnlockedRecipe.
+2. For this first tutorial we will be try to unlock all recipes (for steam version), inside the Mono Dissector -> Assembly-CSharp.dll -> look for the class PlayerData -> Methods -> HasUnlockedRecipe.
 
 ![image](https://user-images.githubusercontent.com/91699796/195327060-783706e0-5e2d-44cf-8cf1-1f1cc5d42ed1.png)
 
