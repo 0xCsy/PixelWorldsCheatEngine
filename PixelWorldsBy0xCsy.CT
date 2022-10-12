@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="42">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>18</ID>
+      <Description>"INFO"</Description>
+      <Options moHideChildren="1" moManualExpandCollapse="1"/>
+      <Color>8000FF</Color>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>19</ID>
+          <Description>"Join My Discord Server : Server: https://discord.gg/zzdFKfHhce"</Description>
+          <Color>80FF00</Color>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>20</ID>
+          <Description>"My Youtube Channel : https://www.youtube.com/channel/UCTdbULomnb5t7GX_Qkf9FKQ"</Description>
+          <Color>80FF00</Color>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"Pixel Worlds [31]"</Description>
+      <Options moHideChildren="1" moManualExpandCollapse="1"/>
+      <Color>4080FF</Color>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>4</ID>
+          <Description>"PLAYER"</Description>
+          <Options moHideChildren="1" moManualExpandCollapse="1"/>
+          <Color>FF8000</Color>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>28</ID>
+              <Description>"God Mod"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+Player.HitPlayerFromAIEnemy-2D0:
+ ret
+Player.HitPlayerFromAIEnemy:
+ ret
+Player.HitPlayerFromBlock:
+ ret
+TrapProjectile.OnTriggerEnter2D:
+ ret
+Player.CausePoisoned:
+ ret
+Player.CausePoisoned+1D0:
+ ret
+Player.CausePoisoned+3A0:
+ ret
+
+[DISABLE]
+Player.HitPlayerFromAIEnemy-2D0:
+ db 4C 8B DC
+Player.HitPlayerFromAIEnemy:
+ db 4C 8B DC
+Player.HitPlayerFromBlock:
+ db 4C 8B DC
+TrapProjectile.OnTriggerEnter2D:
+ db 4C 8B DC
+Player.CausePoisoned:
+ db 4C 8B DC
+Player.CausePoisoned+1D0:
+ db 4C 8B DC
+Player.CausePoisoned+3A0:
+ db 4C 8B DC
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>17</ID>
+              <Description>"Anti-Lava Bounce"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>//define(address,"GameAssembly.dll"+5E5970)
+
+[ENABLE]
+ConfigData.IsBlockHot:
+  mov eax,0
+  ret
+//address:
+//db B8 00 00 00 00 C3
+
+[DISABLE]
+ConfigData.IsBlockHot:
+  db 40 53 48 83 EC 40
+
+//address:
+// db 40 53 48 83 EC 40
+
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>16</ID>
+              <Description>"Anti-Spring"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>//define(address,"GameAssembly.dll"+5E56B0)
+
+[ENABLE]
+ConfigData.IsBlockSpring:
+  mov eax,0
+  ret
+
+//address:
+// db B8 00 00 00 00 C3
+
+[DISABLE]
+ConfigData.IsBlockSpring:
+  db 40 53 48 83 EC 40
+
+//address:
+// db 40 53 48 83 EC 40
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>30</ID>
+              <Description>"Anti-Swim"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+ConfigData.IsBlockSwimming:
+ mov eax,0
+ ret
+
+[DISABLE]
+ConfigData.IsBlockSwimming:
+ db 40 53 48 83 EC 40
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>36</ID>
+              <Description>"Anti-Elevator"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+ConfigData.IsBlockElevator:
+ mov eax,0
+ ret
+
+[DISABLE]
+ConfigData.IsBlockElevator:
+ db 81 F9 DC 0B 00 00
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>40</ID>
+              <Description>"Anti-Pinball"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+ConfigData.IsBlockPinball:
+ mov eax,0
+ ret
+
+[DISABLE]
+ConfigData.IsBlockPinball:
+ db 40 53 48 83 EC 40
+
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>45</ID>
+              <Description>"Anti-Trampolin"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+ConfigData.IsBlockTrampolin:
+ mov eax,0
+ ret
+
+[DISABLE]
+ConfigData.IsBlockTrampolin:
+ db 40 53 48 83 EC 40
+
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>43</ID>
+              <Description>"Anti-Wind"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+ConfigData.IsBlockWind:
+ mov eax,0
+ ret
+
+[DISABLE]
+ConfigData.IsBlockWind:
+ db 40 53 48 83 EC 40
+
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>37</ID>
+              <Description>"Anti-Elastic"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+ConfigData.IsBlockElastic:
+ mov eax,0
+ ret
+
+[DISABLE]
+ConfigData.IsBlockElastic:
+ db 40 53 48 83 EC 40
+
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>21</ID>
+              <Description>"Jump Mode [5]"</Description>
+              <Options moHideChildren="1" moManualExpandCollapse="1"/>
+              <Color>40FF00</Color>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>22</ID>
+                  <Description>"Long Jump"</Description>
+                  <Color>00FF00</Color>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>//define(address,"GameAssembly.dll"+5EE9D0)
+
+[ENABLE]
+ConfigData.GetPlayerJumpModeForBlock:
+  mov eax,2
+  ret
+//address:
+// db B8 02 00 00 00 C3
+
+[DISABLE]
+ConfigData.GetPlayerJumpModeForBlock:
+  db 40 53 48 83 EC 40
+//address:
+// db 40 53 48 83 EC 40
+
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>24</ID>
+                  <Description>"Parachute"</Description>
+                  <Color>00FF00</Color>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>//define(address,"GameAssembly.dll"+5EE9D0)
+
+[ENABLE]
+ConfigData.GetPlayerJumpModeForBlock:
+  mov eax,6
+  ret
+//address:
+// db B8 06 00 00 00 C3
+
+[DISABLE]
+ConfigData.GetPlayerJumpModeForBlock:
+  db 40 53 48 83 EC 40
+//address:
+// db 40 53 48 83 EC 40
+
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>0</ID>
+                  <Description>"Double Jump"</Description>
+                  <Color>00FF00</Color>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>//define(address,"GameAssembly.dll"+5EE9D0)
+
+[ENABLE]
+ConfigData.GetPlayerJumpModeForBlock:
+  mov eax,1
+  ret
+//address:
+// db B8 01 00 00 00 C3
+
+[DISABLE]
+ConfigData.GetPlayerJumpModeForBlock:
+  db 40 53 48 83 EC 40
+//address:
+// db 40 53 48 83 EC 40
+
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>25</ID>
+                  <Description>"Triple Jump"</Description>
+                  <Color>00FF00</Color>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>//define(address,"GameAssembly.dll"+5EE9D0)
+
+[ENABLE]
+ConfigData.GetPlayerJumpModeForBlock:
+  mov eax,6
+  ret
+//address:
+// db B8 06 00 00 00 C3
+
+[DISABLE]
+ConfigData.GetPlayerJumpModeForBlock:
+  db 40 53 48 83 EC 40
+//address:
+// db 40 53 48 83 EC 40
+
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>26</ID>
+                  <Description>"JetPack"</Description>
+                  <Color>00FF00</Color>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>//define(address,"GameAssembly.dll"+5EE9D0)
+
+[ENABLE]
+ConfigData.GetPlayerJumpModeForBlock:
+  mov eax,4
+  ret
+//address:
+// db B8 04 00 00 00 C3
+
+[DISABLE]
+ConfigData.GetPlayerJumpModeForBlock:
+  db 40 53 48 83 EC 40
+//address:
+// db 40 53 48 83 EC 40
+
+</AssemblerScript>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>50</ID>
+              <Description>"Infinite Jump"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+Prime31.CharacterController2D.get_isGrounded:
+ mov eax,1
+ ret
+
+[DISABLE]
+Prime31.CharacterController2D.get_isGrounded:
+ db 40 53 48 83 EC 40
+
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>34</ID>
+              <Description>"Anti-Inverted Controls"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+Player.CheckInvertedControls:
+ ret
+
+[DISABLE]
+Player.CheckInvertedControls:
+ db 48 89 5C 24 08
+</AssemblerScript>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>42</ID>
+          <Description>"FISH HACK"</Description>
+          <Options moHideChildren="1" moManualExpandCollapse="1"/>
+          <Color>FF8000</Color>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>46</ID>
+              <Description>"Fish Speed Hack"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+FishingGaugeMinigameUI.SetFishVelocity:
+ ret
+
+[DISABLE]
+FishingGaugeMinigameUI.SetFishVelocity:
+ db 48 89 5C 24 08
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>47</ID>
+              <Description>"Freeze Fish Position"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+FishingGaugeMinigameUI.SetFishPosition:
+ ret
+
+[DISABLE]
+FishingGaugeMinigameUI.SetFishPosition:
+ db 40 53
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>48</ID>
+              <Description>"Fish Position Freeze + Can't MissClick"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+FishingGaugeMinigameUI.RandomizeFishTargetPoint:
+ ret
+
+[DISABLE]
+FishingGaugeMinigameUI.RandomizeFishTargetPoint:
+ db 48 89 5C 24 08
+</AssemblerScript>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>7</ID>
+          <Description>"WORLDS"</Description>
+          <Options moHideChildren="1" moManualExpandCollapse="1"/>
+          <Color>FF8000</Color>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>15</ID>
+              <Description>"Trap Always OFF"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>//define(address,"GameAssembly.dll"+3D5B20)
+
+[ENABLE]
+World.CheckShouldTrapBeOn:
+ mov eax,0
+ ret
+
+//address:
+// db B8 00 00 00 00 C3
+
+[DISABLE]
+World.CheckShouldTrapBeOn:
+ db 48 89 5C 24 20 44
+
+//address:
+// db 48 89 5C 24 20 44
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>10</ID>
+              <Description>"Anti-Darkness [2]"</Description>
+              <Options moAlwaysHideChildren="1" moManualExpandCollapse="1" moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+              <Color>00FF00</Color>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>5</ID>
+                  <Description>"Light Hack"</Description>
+                  <Color>00FF00</Color>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>//define(address,"GameAssembly.dll"+328270)
+
+[ENABLE]
+WorldController.ChangeLighting:
+ ret
+
+//address:
+// db C3
+
+[DISABLE]
+WorldController.ChangeLighting:
+ db 48 89 5C 24 08
+
+//address:
+// db 48 89 5C 24 08
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>9</ID>
+                  <Description>"Fog Hack"</Description>
+                  <Color>00FF00</Color>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>//define(address,"GameAssembly.dll"+317BD0)
+
+[ENABLE]
+WorldController.InstantiateFogOfWar:
+ ret
+
+//address:
+// db C3
+
+[DISABLE]
+WorldController.InstantiateFogOfWar:
+ db 48 89 5C 24 08
+
+//address:
+// db 48 89 5C 24 08
+</AssemblerScript>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>8</ID>
+              <Description>"Local Edit World"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>//define(address,"GameAssembly.dll"+3E1F10)
+
+[ENABLE]
+World.DoesPlayerHaveRightToModifyItemDataByMinorRightsLockWorld:
+ mov eax,1
+ ret
+
+//address:
+// db B8 01 00 00 00 C3
+
+[DISABLE]
+World.DoesPlayerHaveRightToModifyItemDataByMinorRightsLockWorld:
+ db 48 89 5C 24 08 48
+
+//address:
+// db 48 89 5C 24 08
+</AssemblerScript>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>11</ID>
+          <Description>"MISC"</Description>
+          <Options moHideChildren="1" moManualExpandCollapse="1"/>
+          <Color>FF8000</Color>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>12</ID>
+              <Description>"Unlock Recipes"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>//define(address,"GameAssembly.dll"+866B60)
+
+[ENABLE]
+PlayerData.HasUnlockedRecipe:
+ mov eax,1
+ ret
+
+//address:
+// db B8 01 00 00 00 C3
+
+[DISABLE]
+PlayerData.HasUnlockedRecipe:
+ db 48 89 5C 24 08 57
+
+//address:
+// db 48 89 5C 24 08 57
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>29</ID>
+              <Description>"Place Seed In Air"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+ConfigData.CanPlaceSeedTopOf:
+ mov eax,1
+ ret
+
+[DISABLE]
+ConfigData.CanPlaceSeedTopOf:
+ db 40 53 48 83 EC 40
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>31</ID>
+              <Description>"Always Swim"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+ConfigData.IsBlockSwimming:
+ mov eax,1
+ ret
+
+[DISABLE]
+ConfigData.IsBlockSwimming:
+ db 40 53 48 83 EC 40
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>44</ID>
+              <Description>"Always Jumping"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+ConfigData.IsBlockTrampolin:
+ mov eax,1
+ ret
+
+[DISABLE]
+ConfigData.IsBlockTrampolin:
+ db 40 53 48 83 EC 40
+
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>38</ID>
+              <Description>"Sticky Block V1"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+ConfigData.IsBlockElastic:
+ mov eax,1
+ ret
+
+[DISABLE]
+ConfigData.IsBlockElastic:
+ db 40 53 48 83 EC 40
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>39</ID>
+              <Description>"Sticky Block V2"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+ConfigData.IsBlockPinball:
+ mov eax,1
+ ret
+
+[DISABLE]
+ConfigData.IsBlockPinball:
+ db 40 53 48 83 EC 40
+
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>41</ID>
+              <Description>"Zero Gravity"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+ConfigData.IsBlockWind:
+ mov eax,1
+ ret
+
+[DISABLE]
+ConfigData.IsBlockWind:
+ db 40 53 48 83 EC 40
+
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>13</ID>
+              <Description>"Anti-AFK Kick"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>//define(address,"GameAssembly.dll"+30EC20)
+
+[ENABLE]
+WorldController.KickPlayerByInactivity:
+ ret
+
+//address:
+// db C3
+
+[DISABLE]
+WorldController.KickPlayerByInactivity:
+ db 48 89 5C 24 08
+
+//address:
+// db 48 89 5C 24 08
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14</ID>
+              <Description>"Anti-Word Censor"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>//define(address,"GameAssembly.dll"+7C86F0)
+
+[ENABLE]
+ProfanityFilter.Censor:
+ ret
+
+//address:
+// db C3
+
+[DISABLE]
+ProfanityFilter.Censor:
+ db 4C 8B DC
+
+//address:
+// db 4C 8B DC
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>35</ID>
+              <Description>"Anti-CheckPoint"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+Player.CheckCheckPoints:
+ ret
+
+[DISABLE]
+Player.CheckCheckPoints:
+ db 4C 8B DC
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>32</ID>
+              <Description>"Anti-Portal"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+Player.CheckPortals:
+ ret
+
+[DISABLE]
+Player.CheckPortals:
+ db 48 89 5C 24 08
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>33</ID>
+              <Description>"Anti-Pick"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+OutgoingMessages.SendCollectCollectableMessage:
+ ret
+
+[DISABLE]
+OutgoingMessages.SendCollectCollectableMessage:
+ db 48 89 5C 24 08
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>49</ID>
+              <Description>"Anti-Jump"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+Prime31.CharacterController2D.get_isGrounded:
+ mov eax,0
+ ret
+
+[DISABLE]
+Prime31.CharacterController2D.get_isGrounded:
+ db 40 53 48 83 EC 40
+
+</AssemblerScript>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
